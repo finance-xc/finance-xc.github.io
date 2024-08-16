@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: 🚀 快速开始
-      link: /quick-start
+      link: /zh_CN/quick-start
     - theme: alt
       text: 📖 API 文档
-      link: /api-spec
+      link: /zh_CN/api-spec
 
 features:
   - icon: ⚡️
