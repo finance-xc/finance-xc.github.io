@@ -15,7 +15,7 @@ hero:
       link: /quick-start
     - theme: alt
       text: 📖 API Specification
-      link: /api-spec
+      link: /api/api-spec
 features:
   - icon: ⚡️
     title: Feature A

@@ -15,7 +15,7 @@ hero:
       link: /zh_CN/quick-start
     - theme: alt
       text: 📖 API 文档
-      link: /zh_CN/api-spec
+      link: /zh_CN/api/api-spec
 
 features:
   - icon: ⚡️
