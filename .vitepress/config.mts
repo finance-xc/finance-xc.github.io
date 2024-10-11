@@ -49,7 +49,7 @@ export default defineConfig({
           {
             text: 'API',
             items: [
-              { text: 'Markdown Sample', link: '/api/api-spec' },
+              { text: 'POIGeneralAPI', link: '/api/poi-general-api' },
               { text: 'MifareCardReader', link: '/api/mifare-card-reader' }
             ]
           },
@@ -90,7 +90,7 @@ export default defineConfig({
           {
             text: '接口',
             items: [
-              { text: 'Markdown Sample', link: '/zh_CN/api/api-spec' },
+              { text: 'POIGeneralAPI', link: '/zh_CN/api/poi-general-api' },
               { text: 'MifareCardReader', link: '/zh_CN/api/mifare-card-reader' },
             ]
           },
