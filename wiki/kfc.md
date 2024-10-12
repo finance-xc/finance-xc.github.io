@@ -10,4 +10,4 @@ comment: false
 ---
 
 [点击领取肯德基红包](kfcapplinkurl://menu?action={"url":"kfcapplinkurl://t1/kfc-ordering-preorder/default"})
-[![](/banner_kfc_2.jpg)](kfcapplinkurl://menu?action={"url":"kfcapplinkurl://t1/kfc-ordering-preorder/default"})
+[![](../images/banner_kfc_2.jpg)](kfcapplinkurl://menu?action={"url":"kfcapplinkurl://t1/kfc-ordering-preorder/default"})
