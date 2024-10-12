@@ -35,7 +35,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'Docs', link: '/api-spec' },
+          { text: 'Docs', link: '/api/poi-general-api' },
           { text: 'Changelog', link: '/changelog.md' },
         ],
 
@@ -56,7 +56,8 @@ export default defineConfig({
           {
             text: 'Wiki',
             items: [
-              { text: 'Mifare Card', link: '/wiki/mifare-card' }
+              { text: 'Mifare Card', link: '/wiki/mifare-card' },
+              { text: 'KFC Demo', link: '/wiki/kfc' }
             ]
           },
           {
@@ -76,7 +77,7 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '主页', link: '/zh_CN/' },
-          { text: '文档', link: '/zh_CN/api/api-spec' },
+          { text: '文档', link: '/zh_CN/api/poi-general-api' },
           { text: '更新日志', link: '/zh_CN/changelog.md' },
         ],
 
