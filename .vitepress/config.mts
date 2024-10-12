@@ -97,7 +97,8 @@ export default defineConfig({
           {
             text: '拓展',
             items: [
-              { text: 'Mifare 卡', link: '/zh_CN/wiki/mifare-card' }
+              { text: 'Mifare 卡', link: '/zh_CN/wiki/mifare-card' },
+              { text: 'KFC Demo', link: '/wiki/kfc' }
             ]
           },
           {
