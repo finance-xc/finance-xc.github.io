@@ -1,12 +1,12 @@
 ---
-navbar: false
-sidebar: false
-aside: false
-editLink: false
-footer: false
-prev: false
-next: false
-comment: false
+# navbar: false
+# sidebar: false
+# aside: false
+# editLink: false
+# footer: false
+# prev: false
+# next: false
+# comment: false
 ---
 
 kfc demo
