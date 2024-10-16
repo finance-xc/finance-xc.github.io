@@ -49,6 +49,7 @@ export default defineConfig({
             text: 'API',
             items: [
               { text: 'POIGeneralAPI', link: '/api/poi-general-api' },
+              { text: 'POIHsmManage', link: '/zh_CN/api/poi-hsm-manage' },
               { text: 'MifareCardReader', link: '/api/mifare-card-reader' }
             ]
           },
@@ -91,6 +92,7 @@ export default defineConfig({
             text: '接口',
             items: [
               { text: 'POIGeneralAPI', link: '/zh_CN/api/poi-general-api' },
+              { text: 'POIHsmManage', link: '/zh_CN/api/poi-hsm-manage' },
               { text: 'MifareCardReader', link: '/zh_CN/api/mifare-card-reader' },
             ]
           },
