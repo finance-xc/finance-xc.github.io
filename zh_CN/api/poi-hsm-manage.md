@@ -21,10 +21,11 @@ PCI 认证指的是 `P`ayment `C`ard `I`ndustry Data Security Standard (支付�
 :::
 
 支付行业常见的密钥类型有
-* TMK 终端主密钥；ZMK 区域主密钥
-* TPK 终端 PIN 密钥；ZPK 区域 PIN 密钥
-* TAK 终端 MAC 密钥
-* TEK 终端数据加密密钥
+* TMK - `T`erminal `M`aster `K`ey 终端主密钥
+* TPK - `T`erminal `P`in Encryption `K`ey 终端 PIN 密钥
+* TAK - `T`erminal Message `A`uthentication Code `K`ey 终端 MAC 密钥
+* TEK - `T`erminal Data `E`ncryption `K`ey 终端数据加密密钥
+* TDK - `T`erminal Data `D`ecryption `K`ey 终端数据解密密钥
 
 
 ### DUKPT
@@ -79,7 +80,7 @@ public int PedWriteKey(PedKeyInfo keyInfo, PedKcvInfo kcvInfo)
 :::tip
 写入密钥需要注意以下几个关键字段：
 * 源密钥类型；如：PED_TLK, PED_TMK
-* 源密钥索引；用于解密目标密钥的密钥索引
+* 源密钥索引；用于解密目标密钥的密钥索引 (索引为 0 时，目标秘钥是明文)
 * 目标密钥类型；待写入密钥的类型 （TLK 可以是明文写入）
 * 目标密钥索引；待写入密钥的位置
 
