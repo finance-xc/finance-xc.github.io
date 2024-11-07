@@ -104,3 +104,84 @@ POIPrinterManager.IPrinterListener listener = new POIPrinterManager.IPrinterList
 printerManager.beginPrint(listener);
 
 ```
+
+## 继续打印
+
+在打印的过程中，经常会出现缺纸或高温，这个时候会停止打印。如果需要继续打印的话，可以按下面步骤实现。
+
+* 在 onError 回调中展示对话框
+```java{14,16}
+POIPrinterManager.IPrinterListener listener = new POIPrinterManager.IPrinterListener() {
+    @Override
+    public void onStart() {
+        Log.i(TAG, "onStart");
+    }
+
+    @Override
+    public void onFinish() {
+        Log.i(TAG, "onFinish");
+        printerManager.close();
+    }
+
+    @Override
+    public void onError(int code, String msg) {
+        Log.e(TAG, "onError code: " + code + ", msg: " + msg);
+        showAlertDialog(printerManager, code, msg);
+    }
+};
+```
+
+* 在对话框中调用 continuePrint
+
+:::tip
+continuePrint(boolean restart)
+- restart = false: 表示接着上一次的继续打印
+- restart = true: 表示从头开始重新打印
+:::
+
+```java{16,34}
+AlertDialog dialog;
+private boolean isDialogShown = false;
+private void showAlertDialog(POIPrinterManager printerManager, int code, String msg) {
+    // 检查对话框是否已经显示
+    if (isDialogShown) {
+        return; // 如果已经显示，则不再显示
+    }
+    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    builder.setTitle("print error : " + code);
+    builder.setMessage(msg);
+    builder.setCancelable(false);
+    builder.setIcon(android.R.drawable.ic_dialog_alert); // 设置图标
+    // 设置PositiveButton
+    builder.setPositiveButton("continue", new DialogInterface.OnClickListener() {
+        public void onClick(DialogInterface dialog, int id) {
+            printerManager.continuePrint(false); // false 表示接着上一次的继续打印
+            dialog.dismiss();
+            isDialogShown = false; // 对话框被关闭时重置标志
+        }
+    });
+
+    builder.setNeutralButton("close", new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialog, int which) {
+            printerManager.close();
+            dialog.dismiss();
+            isDialogShown = false; // 对话框被关闭时重置标志
+        }
+    });
+
+    // 设置NegativeButton
+    builder.setNegativeButton("reprint", new DialogInterface.OnClickListener() {
+        public void onClick(DialogInterface dialog, int id) {
+            printerManager.continuePrint(true);// true 表示从头开始重新打印
+            dialog.dismiss(); // 关闭对话框
+            isDialogShown = false; // 对话框被关闭时重置标志
+        }
+    });
+
+    // 创建并显示 AlertDialog
+    dialog = builder.create();
+    isDialogShown = true; // 设置标志为已显示
+    dialog.show();
+}
+```
