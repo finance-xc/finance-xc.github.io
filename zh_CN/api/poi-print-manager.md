@@ -97,8 +97,7 @@ POIPrinterManager.IPrinterListener listener = new POIPrinterManager.IPrinterList
     @Override
     public void onError(int code, String msg) {
         Log.e(TAG, "onError code: " + code + ", msg: " + msg);
-        if (dialog == null || !dialog.isShowing())
-            showAlertDialog(printerManager, code, msg);
+        printerManager.close();
     }
 };
 printerManager.beginPrint(listener);
