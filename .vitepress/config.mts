@@ -64,6 +64,7 @@ export default defineConfig({
           {
             text: 'FAQ',
             items: [
+              { text: 'Error Codes', link: '/faq/error-codes' },
               { text: 'About Mifare', link: '/faq/mifare' }
             ]
           }
@@ -108,6 +109,7 @@ export default defineConfig({
           {
             text: '常见问题',
             items: [
+              { text: '错误码', link: '/zh_CN/faq/error-codes' },
               { text: 'Mifare 相关', link: '/zh_CN/faq/mifare' }
             ]
           }
