@@ -34,8 +34,9 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/' },
-          { text: 'Docs', link: '/api/poi-general-api' },
+          { text: 'APIs', link: '/api/poi-general-api' },
           { text: 'Changelog', link: '/changelog.md' },
+          { text: 'JavaDoc', link: `/javadoc/index.html`, target: "blank" },
         ],
 
         sidebar: [
@@ -58,7 +59,7 @@ export default defineConfig({
             text: 'Wiki',
             items: [
               { text: 'Mifare Card', link: '/wiki/mifare-card' },
-              { text: 'KFC Demo', link: '/wiki/kfc' }
+              // { text: 'KFC Demo', link: '/wiki/kfc' }
             ]
           },
           {
@@ -79,8 +80,9 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: '主页', link: '/zh_CN/' },
-          { text: '文档', link: '/zh_CN/api/poi-general-api' },
+          { text: '接口', link: '/zh_CN/api/poi-general-api' },
           { text: '更新日志', link: '/zh_CN/changelog.md' },
+          { text: 'Java文档', link: '/javadoc/index.html', target: "blank" },
         ],
 
         sidebar: [
@@ -103,7 +105,7 @@ export default defineConfig({
             text: '拓展',
             items: [
               { text: 'Mifare 卡', link: '/zh_CN/wiki/mifare-card' },
-              { text: 'KFC Demo', link: '/wiki/kfc' }
+              // { text: 'KFC Demo', link: '/wiki/kfc' }
             ]
           },
           {

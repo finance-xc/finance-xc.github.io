@@ -1,0 +1,6 @@
+com.pos.sdk.accessory
+com.pos.sdk.cardreader
+com.pos.sdk.emvcore
+com.pos.sdk.printer
+com.pos.sdk.printer.models
+com.pos.sdk.security
