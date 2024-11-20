@@ -10,7 +10,7 @@
 
 ### SDK 目录结构
 
-![image-20241119193209149](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20241119193209149.png)
+![image-20241119193209149](../images/SDK directory structure.png)
 
 
 
