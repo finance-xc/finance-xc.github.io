@@ -2,103 +2,136 @@
 
 
 
-### SDK 简介
+## SDK 简介
 
 祥承 POS SDK 是一套基于祥承研发设备的金融相关功能应用程序接口。您可以使用该套 SDK 开发适用于 Android 系统（基于祥承研发设备）的交易应用，通过调用 POS SDK 接口，您可以轻松启动交易，进行加解密数据，构建功能丰富、交互性强的交易类应用程序。
 
 
 
-### SDK 目录结构
+## SDK 目录结构
 
-![image-20241119193209149](../images/SDK directory structure.png)
+![image-20241119193209149](../images/SDK_directory_structure.png)
 
+<br>
 
+### package com.pos.sdk.accessory
 
-#### com.pos.sdk.accessory
+---
 
-**class POIGeneralAPI**
+#### class POIGeneralAPI
 
 提供获取 SDK 版本号、SP 版本号、设置 SP 时间、获取 SP 时间、响蜂鸣器等基础功能
 
-**class POISpUpdateManager**
+---
+
+#### class POISpUpdateManager
 
 提供 SP 升级功能
 
+---
 
+<br>
 
-#### com.pos.sdk.cardreader
+### package com.pos.sdk.cardreader
 
-**class PosIccCardReader**
+---
+
+#### class PosIccCardReader
 
 提供 IC 芯片的上电，寻卡，获取卡片信息，下电操作
 
-**class PosPiccCardReader**
+---
+
+#### class PosPiccCardReader
 
 提供 PICC 芯片的上电，寻卡，获取卡片信息，下电操作
 
-**class PosMagCardReader**
+---
+
+#### class PosMagCardReader
 
 提供 Mag 芯片的上电，寻卡，获取卡片信息，下电操作
 
-**class PosMifareCardReader**
+---
+
+#### class PosMifareCardReader
 
 提供 Mifare 芯片的上电，寻卡，获取卡片信息，下电操作
 
+<br>
 
+### package com.pos.sdk.emvcore
 
-#### com.pos.sdk.emvcore
+---
 
-**class POIEmvCoreManager**
+#### class POIEmvCoreManager
 
 提供配置 Aid、CAPK、ExceptionFile、RevocationIPK，设置终端参数，启动交易等功能
 
-**class PosEmvAid**
+---
+
+#### class PosEmvAid
 
 Aid 基础配置类
 
-**class PosEmvCapk**
+---
+
+#### class PosEmvCapk
 
 Capk 基础配置类
 
-**class PosEmvExceptionFile**
+---
+
+#### class PosEmvExceptionFile
 
 ExceptionFile 基础配置类
 
-**class PosEmvRevocationIPK**
+---
+
+#### class PosEmvRevocationIPK
 
 RevocationIPK 基础配置类
 
+<br>
 
+### package com.pos.sdk.printer
 
-#### com.pos.sdk.printer
+---
 
-**class POIPrinterManager**
+#### class POIPrinterManager
 
 提供打印功能
 
+<br>
 
+### package com.pos.sdk.printer.model
 
-#### com.pos.sdk.printer.model
+---
 
-**class BitmapPrintLine**
+#### class BitmapPrintLine
 
 提供添加 Bitmap 图片功能
 
-**class TextPrintLine**
+---
+
+#### class TextPrintLine
 
 提供添加 Text 文本功能
 
+<br>
 
+### package com.pos.sdk.security
 
-#### com.pos.sdk.security
+---
 
-**class POIHsmManage**
+#### class POIHsmManage
 
 提供写入 DUKPT/MKSK 密钥、获取密钥信息、生成 RSA 密钥、加解密数据等功能
 
 
 
-### 将 SDK 集成到开发环境
+
+## 将 SDK 集成到开发环境
 
 1. 使用本地的方式集成
 
@@ -136,7 +169,7 @@ RevocationIPK 基础配置类
 
     
 
-### 测试是否集成成功
+## 测试是否集成成功
 
 集成完成后可以调用 getSpVersion() 接口看是否能获取到 SP 版本号，能获取到即为集成成功
 
