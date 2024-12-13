@@ -2,7 +2,7 @@
 
 
 
-#### ICC Error Code
+## ICC Error Code
 
 | Error code | Error name | Comment |
 | --- | --- | --- |
@@ -40,7 +40,7 @@
 
 
 
-#### PCD Error Code
+## PCD Error Code
 
 | Error code | Error name | Comment |
 | --- | --- | --- |
@@ -85,7 +85,7 @@
 
 
 
-#### MSR Error Code
+## MSR Error Code
 
 | Error code | Error name | Comment |
 | --- | --- | --- |
@@ -96,7 +96,7 @@
 
 
 
-#### Keypad Error Code
+## Keypad Error Code
 
 | Error code | Error name | Comment                     |
 | ---------- | ---------- | --------------------------- |
@@ -114,7 +114,7 @@
 
 
 
-#### RTC Error Code
+## RTC Error Code
 
 | Error code | Error name | Comment |
 | --- | --- | --- |
@@ -133,7 +133,7 @@
 
 
 
-#### HSM Error Code
+## HSM Error Code
 
 | Error code | Error name | Comment |
 | --- | --- | --- |
@@ -221,7 +221,7 @@
 
 
 
-#### EMV Error Code
+## EMV Error Code
 
 | Error code | Error name | Comment |
 | --- | --- | --- |
