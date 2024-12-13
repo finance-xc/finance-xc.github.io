@@ -10,7 +10,7 @@
 
 ## SDK 目录结构
 
-![image-20241119193209149](../images/SDK_directory_structure.png)
+![image-20241119193209149](./images/SDK_directory_structure.png)
 
 <br>
 
